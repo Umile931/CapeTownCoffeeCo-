@@ -1,0 +1,64 @@
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Order Online |  Cape Town Coffee Co </title>
+<meta name="description" content="Cape Town Coffee Co - Specialty coffee, artisan pastries on Long Street. Freshly roasted beans, vegan options, order online.">
+<meta name="keywords" content="coffee Cape Town, specialty coffee, Cape Town Coffee Co, cafe Long Street">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order - Cape Town Coffee Co</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<!-- Part 3 SEO + JS Elements -->
+<div id="myModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000;">
+<div style="background:white; margin:15% auto; padding:20px; width:80%; max-width:400px;">
+<span onclick="closeModal()" style="float:right; cursor:pointer;">&times;</span>
+<p id="modalText"></p>
+</div>
+</div>
+
+<div id="lightbox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:1001; justify-content:center; align-items:center;">
+<img id="lightbox-img" src="" style="max-width:90%; max-height:90%;">
+</div>
+
+<div id="formSuccess" style="display:none; color:green; padding:10px;">Thank you! Your message sent - Cape Town Coffee Co will reply soon.</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/script.js"></script><body>
+<header>
+<h1>Cape Town Coffee Co</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="menu.html">Menu</a>
+<a href="order.html">Order</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<main>
+<section>
+<h2>Place Your Order</h2>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Email" required>
+<textarea placeholder="Your Order"></textarea>
+<button type="submit">Submit Order</button>
+<form id="enquiryForm" method="POST">
+<input type="text" name="name" placeholder="Full Name*" required>
+<input type="email" name="email" placeholder="Email*" required>
+<input type="tel" name="phone" placeholder="Phone (10 digits)" required>
+<textarea name="message" placeholder="Your order/message*" required minlength="10"></textarea>
+<div class="form-errors" style="display:none; color:red; background:#ffe0e0; padding:10px; margin:10px 0;"></div>
+<div id="formSuccess" style="display:none; color:green; background:#e0ffe0; padding:10px; margin:10px 0;">Thank you! Cape Town Coffee Co will reply soon.</div>
+<button type="submit">Submit</button>
+</form>
+</section>
+</main>
+<footer><p>&copy; 2026 Cape Town Coffee Co</p></footer>
+</body>
+</html>

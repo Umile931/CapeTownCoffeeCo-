@@ -1,0 +1,56 @@
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Menu | Coffee & Pastries | Cape Town Coffee CO </title>
+<meta name="description" content="Cape Town Coffee Co - Specialty coffee, artisan pastries on Long Street. <h1>Our Menu</h1>
+<input type="text" id="searchInput" placeholder="Search coffee, pastries..." style="padding:8px; width:60%;">
+<select id="categoryFilter" style="padding:8px;"><option value="all">All</option><option value="coffee">Coffee</option><option value="food">Food</option></select>
+<div id="menu-container" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px; margin-top:20px;"></div><meta name="keywords" content="coffee Cape Town, specialty coffee, Cape Town Coffee Co, cafe Long Street">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu - Cape Town Coffee Co</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<!-- Part 3 SEO + JS Elements -->
+<div id="myModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000;">
+<div style="background:white; margin:15% auto; padding:20px; width:80%; max-width:400px;">
+<span onclick="closeModal()" style="float:right; cursor:pointer;">&times;</span>
+<p id="modalText"></p>
+</div>
+</div>
+
+<div id="lightbox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:1001; justify-content:center; align-items:center;">
+<img id="lightbox-img" src="" style="max-width:90%; max-height:90%;">
+</div>
+
+<div id="formSuccess" style="display:none; color:green; padding:10px;">Thank you! Your message sent - Cape Town Coffee Co will reply soon.</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/script.js"></script><body><input type="text" id="searchInput" placeholder="Search our menu...">
+<select id="categoryFilter"><option value="all">All</option><option value="coffee">Coffee</option><option value="food">Food</option></select>
+<div id="menu-container" class="menu-grid"></div>
+<header>
+<h1>Cape Town Coffee Co</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="menu.html">Menu</a>
+<a href="order.html">Order</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<main><input type="text" id="searchInput" placeholder="Search our coffee...">
+<select id="categoryFilter"><option value="all">All</option><option value="coffee">Coffee</option><option value="food">Food</option></select>
+<div id="menu-container"></div>
+<section><h2>Espresso</h2><p>Rich and bold - R28</p></section>
+<section><h2>Cappuccino</h2><p>Creamy and smooth - R35</p></section>
+<section><h2>Flat White</h2><p>Perfect balance - R38</p></section>
+</main>
+<footer><p>&copy; 2026 Cape Town Coffee Co</p></footer>
+</body>
+</html>

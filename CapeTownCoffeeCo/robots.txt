@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://capetowncoffeeco.netlify.app/sitemap.xml
+Site: https://luminous-heliotrope-a730cf.netlify.app 

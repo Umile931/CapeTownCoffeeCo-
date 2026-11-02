@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Cape Town Coffee Co - Long Street</title>
+<meta name="description" content="Visit Cape Town Coffee Co at 123 Long Street, Cape Town. Open 7am-6pm. Call or order online.">
+<meta name="keywords" content="coffee Cape Town, contact Cape Town Coffee Co, cafe Long Street">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+<header>
+<h1>Cape Town Coffee Co</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="menu.html">Menu</a>
+<a href="order.html">Order</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<main>
+<h1>Contact Us</h1>
+<p>123 Long Street, Cape Town, 8001 | Open 7am - 6pm daily</p>
+
+<!-- MAP - Part 3 Requirement -->
+<div id="map" style="height:350px; width:100%; border-radius:8px; margin:20px 0; border:2px solid #3e2723;"></div>
+
+<h2>Send us a message</h2>
+<form id="contactForm" method="POST">
+<label>Full Name*</label><br>
+<input type="text" name="name" required minlength="2" style="width:100%; padding:8px;"><br><br>
+
+<label>Email*</label><br>
+<input type="email" name="email" required style="width:100%; padding:8px;"><br><br>
+
+<label>Phone*</label><br>
+<input type="tel" name="phone" placeholder="0821234567" required pattern="[0-9]{10}" style="width:100%; padding:8px;"><br><br>
+
+<label>Message*</label><br>
+<textarea name="message" required minlength="10" rows="5" style="width:100%; padding:8px;"></textarea><br><br>
+
+<div class="form-errors" style="display:none; color:red; background:#ffe0e0; padding:10px;"></div>
+<div id="formSuccess" style="display:none; color:green; background:#e0ffe0; padding:10px; margin:10px 0;">Thank you! Cape Town Coffee Co will reply soon.</div>
+
+<button type="submit" style="padding:10px 20px; background:#3e2723; color:white;">Send Message</button>
+</form>
+</main>
+
+<footer><p>&copy; 2026 Cape Town Coffee Co</p></footer>
+
+<!-- Part 3 Elements - MUST be before closing body -->
+<div id="myModal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.5);">
+<div style="background:white; margin:15% auto; padding:20px; width:80%; max-width:400px;">
+<span onclick="closeModal()" style="float:right; cursor:pointer; font-size:24px;">&times;</span>
+<p id="modalText"></p>
+</div>
+</div>
+
+<div id="lightbox" style="display:none; position:fixed; z-index:1001; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center;">
+<img id="lightbox-img" src="" style="max-width:90%; max-height:90%;">
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

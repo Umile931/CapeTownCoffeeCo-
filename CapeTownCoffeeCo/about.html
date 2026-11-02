@@ -1,0 +1,65 @@
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Cape Town Coffee Co - Our Story | Best Specialty Coffee in Cape Town</title>
+<meta name="description" content="Cape Town Coffee Co - Specialty coffee, artisan pastries on Long Street. Freshly roasted beans, vegan options, order online.">
+<meta name="keywords" content="coffee Cape Town, specialty coffee, Cape Town Coffee Co, cafe Long Street">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" /><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" /> 
+</head><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - Cape Town Coffee Co</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<!-- Part 3 SEO + JS Elements -->
+<div id="myModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000;">
+<div style="background:white; margin:15% auto; padding:20px; width:80%; max-width:400px;">
+<span onclick="closeModal()" style="float:right; cursor:pointer;">&times;</span>
+<p id="modalText"></p>
+</div>
+</div>
+
+<div id="lightbox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:1001; justify-content:center; align-items:center;">
+<img id="lightbox-img" src="" style="max-width:90%; max-height:90%;">
+</div>
+
+<div id="formSuccess" style="display:none; color:green; padding:10px;">Thank you! Your message sent - Cape Town Coffee Co will reply soon.</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/script.js"></script><body>
+<header>
+<h1>Cape Town Coffee Co</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="menu.html">Menu</a>
+<a href="order.html">Order</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<main>
+<section>
+<h2>About Us</h2>
+<p>Cape Town Coffee Co started in 2022 with a mission to bring premium local coffee to the city.</p>
+</section>
+</main>
+<footer><p>&copy; 2026 Cape Town Coffee Co</p></footer>
+<!-- Part 3 Required Elements -->
+<div id="myModal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.5);">
+<div style="background:#fdf6ec; margin:10% auto; padding:20px; width:80%; max-width:400px; border-radius:8px;">
+<span onclick="closeModal()" style="float:right; cursor:pointer; font-size:28px;">&times;</span>
+<p id="modalText"></p>
+<a href="order.html"><button>Go to Order</button></a>
+</div>
+</div>
+
+<div id="lightbox" style="display:none; position:fixed; z-index:1001; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.85); justify-content:center; align-items:center;">
+<img id="lightbox-img" src="" style="max-width:90%; max-height:90%; border-radius:8px;">
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/script.js"></script></body>
+</html>
